@@ -109,6 +109,9 @@ void OpenCVHelper::groupPointsByY(const std::vector<MyCircle> &points) {
   auto d6yL = localtions[3].m_y + 30;
   auto d6yH = localtions[3].m_y + 55;
 
+  auto HeadX = (localtions[0].m_x + localtions[3].m_x) / 2;
+  auto TailX = (localtions[1].m_x + localtions[2].m_x) / 2;
+
   // cout << "L: " << d1yL << " H: " << d1yH << endl;
   // cout << "L: " << d2yL << " H: " << d2yH << endl;
   // cout << "L: " << d3yL << " H: " << d3yH << endl;
